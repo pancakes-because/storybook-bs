@@ -1,39 +1,34 @@
-import BasicExample from './Colors'; 
+import ColorsExample from './Colors'; 
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
   title: 'Colors',
-  component: BasicExample,
+  component: ColorsExample,
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },
   },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary = {
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args 
+
+export const Success = {
   args: {
     primary: true,
-    label: 'Button',
+    wcag: 'AA 5.31' , 
+    number: 25, 
+    hex: "#F6FEF9"
   },
 };
 
-export const Secondary = {
+export const Warning = {
   args: {
-    label: 'Button',
+    ...Success.args,
   },
 };
 
-export const Large = {
+export const Error = {
   args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
+    ...Success.args,
   },
 };
