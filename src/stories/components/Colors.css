@@ -1,0 +1,9 @@
+.storybook-color--success {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-color--warning {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(165, 133, 133, 0.15) 0px 0px 0px 1px inset;
+}
