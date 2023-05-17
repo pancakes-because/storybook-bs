@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import './Colors.css';
 
 export const ColorsExample = ({ wcag, number, hexcode }) => {
   return (
