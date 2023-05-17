@@ -12,13 +12,13 @@ const colors = [
     id: 2, 
     wcag: 'AA 5.31' , 
     number: 25, 
-    hexcode: "#F6FEF9"
+    hexcode: "#DC6803"
   }, 
   {
     id: 3, 
     wcag: 'AA 5.31' , 
     number: 25, 
-    hexcode: "#F6FEF9"
+    hexcode: "#D92D20"
   }, 
 
 ]
