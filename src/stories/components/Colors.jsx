@@ -1,22 +1,40 @@
 import Card from 'react-bootstrap/Card';
 import './Colors.css';
 
-export const ColorsExample = ({success, wcag, number, hex, ...props}) => {
-  const mode = success ? 'storybook-color--success' : 'storybook-color--warning';
+export const ColorsExample = ({ wcag, number, hexcode }) => {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', backgroundColor: hexcode }}>
       <Card.Body>
-        <Card.Title>wcag</Card.Title>
+        <Card.Title>{wcag}</Card.Title>
       </Card.Body>
       <Card.Body>
-        <Card.Text>number</Card.Text>
-        <Card.Text>hexcode</Card.Text>
+        <Card.Text>{number}</Card.Text>
+        <Card.Text>{hexcode}</Card.Text>
       </Card.Body>
     </Card>
   );
 }; 
 
 export default ColorsExample;
+
+// code before redoing it like dad jokes video 
+
+// export const ColorsExample = ({success, wcag, number, hex, ...props}) => {
+//   const mode = success ? 'storybook-color--success' : 'storybook-color--warning';
+//   return (
+//     <Card style={{ width: '18rem' }}>
+//       <Card.Body>
+//         <Card.Title>wcag</Card.Title>
+//       </Card.Body>
+//       <Card.Body>
+//         <Card.Text>number</Card.Text>
+//         <Card.Text>hexcode</Card.Text>
+//       </Card.Body>
+//     </Card>
+//   );
+// }; 
+
+// export default ColorsExample;
 
 
 // original card component from 
