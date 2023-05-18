@@ -1,5 +1,6 @@
 // import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
+import './typography.css';
 
 export const DefaultExample = ({ heading, textName, textSize }) => {
   return (
@@ -13,8 +14,8 @@ export const DefaultExample = ({ heading, textName, textSize }) => {
         as="li"
         className="d-flex justify-content-between align-items-start">
         <div className="ms-2 me-auto">
-          <div>{textName}</div>
-          <div>{textSize}</div>
+          <div className={[`storybook-listItem--${textSize}`]}>{textName}</div>
+          <div className={[`storybook-listItem--${textSize}`]}>{textSize}</div>
         </div>
       </ListGroup.Item>
     </ListGroup>
