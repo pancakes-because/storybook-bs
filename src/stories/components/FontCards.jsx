@@ -1,24 +1,24 @@
 import React from 'react'
-import ListGroupExample from './Typography'
+import DefaultExample from './Typography'
 
 const typography = [
   {
     id: 1, 
-    wcag: 'AA 5.31' , 
-    number: 25, 
-    hexcode: "#039855"
+    heading: 'Heading 1 | 2xl' , 
+    textName: 'Display h1 ',
+    textSize: 'Regular'
   }, 
   {
     id: 2, 
-    wcag: 'AA 5.31' , 
-    number: 25, 
-    hexcode: "#DC6803"
+    heading: 'Heading 2 | xl' , 
+    textName: 'Display h1', 
+    textSize: 'Medium'
   }, 
   {
     id: 3, 
-    wcag: 'AA 5.31' , 
-    number: 25, 
-    hexcode: "#D92D20"
+    heading: 'Heading 3 | lg' , 
+    textName: 'Display h1', 
+    textSize: 'Semibold'
   }, 
 
 ]
@@ -26,6 +26,6 @@ const typography = [
 export default function FontCards() {
   return (
 
-    <div>{typography.map(typography => <ListGroupExample wcag={typography.wcag} number={typography.number} hexcode={typography.hexcode} /> )}</div>
+    <div>{typography.map(typography => <DefaultExample heading={typography.heading} textName={typography.textName} textSize={typography.textSize} /> )}</div>
   )
 }
