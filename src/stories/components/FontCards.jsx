@@ -19,8 +19,7 @@ const typography = [
     heading: 'Heading 3 | lg' , 
     textName: 'Display h1', 
     textSize: 'Semibold'
-  }, 
-
+  }
 ]
 
 export default function FontCards() {

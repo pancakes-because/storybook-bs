@@ -1,0 +1,12 @@
+.storybook-listItem--Regular {
+  font-weight: 400; 
+}
+
+.storybook-listItem--Medium {
+  font-weight: 500; 
+}
+
+
+.storybook-listItem--Semibold {
+  font-weight: 600; 
+}
